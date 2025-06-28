@@ -1,5 +1,5 @@
 import React from 'react';
-import MainLayout from './layout/MainLayout';
+import MainLayout from './Layout/MainLayout';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
