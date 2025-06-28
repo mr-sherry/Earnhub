@@ -9,9 +9,7 @@ import { auth } from "../firebase/config";
 
 const Profile = () => {
     const { user } = useAuth();            // Get user info from AuthContext
-    console.log("🚀 ~ Profile ~ user:", user)
     const { dashboardData, loadingDashboard } = useApp(); // Get stats from AppContext
-    console.log("🚀 ~ Profile ~ dashboardData:", dashboardData)
 
     const handleLogout = async () => {
         try {
