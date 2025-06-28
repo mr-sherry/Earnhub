@@ -1,0 +1,154 @@
+.boardWrapper {
+  padding: 2rem;
+  min-height: 100vh;
+  color: #fff;
+  overflow-x: auto;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.boardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  justify-content: center;
+}
+
+.column {
+  min-width: 260px;
+  flex: 0 0 260px;
+  scroll-snap-align: start;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.columnTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.taskCard {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 1.25rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.taskCard:hover {
+  transform: translateY(-2px);
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.Copywriting {
+  background: rgba(255, 0, 128, 0.2);
+  color: #ff5db1;
+}
+
+.UIDesign {
+  background: rgba(0, 198, 255, 0.2);
+  color: #00c6ff;
+}
+
+.Illustration {
+  background: rgba(0, 255, 204, 0.2);
+  color: #00ffcc;
+}
+
+.taskTitle {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.taskFooter {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+/* ===== Responsive Tweaks ===== */
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 1.5rem;
+  }
+
+  .boardWrapper {
+    padding: 1rem;
+  }
+
+  .boardGrid {
+    gap: 1rem;
+  }
+
+  .column {
+    min-width: 220px;
+    flex: 0 0 220px;
+  }
+
+  .taskCard {
+    padding: 0.75rem;
+  }
+
+  .taskTitle {
+    font-size: 0.9rem;
+  }
+
+  .taskFooter {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pageTitle {
+    font-size: 1.3rem;
+  }
+
+  .column {
+    min-width: 180px;
+    flex: 0 0 180px;
+  }
+
+  .taskCard {
+    padding: 0.6rem;
+  }
+
+  .tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .taskTitle {
+    font-size: 0.85rem;
+  }
+
+  .taskFooter {
+    font-size: 0.7rem;
+  }
+}

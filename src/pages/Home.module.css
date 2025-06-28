@@ -1,0 +1,289 @@
+/* ===== Global Resets ===== */
+.landingWrapper {
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ===== Hero Section ===== */
+.heroSection {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #00c6ff, #7b1fa2);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.primaryButton {
+  background: #00c6ff;
+  color: #000;
+  font-weight: 600;
+}
+
+.secondaryButton {
+  background: transparent;
+  border: 2px solid #00c6ff;
+  color: #00c6ff;
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 198, 255, 0.5);
+}
+
+.icon {
+  height: 1rem;
+}
+
+/* ===== Section Wrapper ===== */
+.section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+/* ===== Section Title ===== */
+.sectionTitle {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  background: linear-gradient(90deg, #00c6ff, #7b1fa2);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* ===== Card Grid ===== */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+/* ===== Feature/Step/Testimonial Cards ===== */
+.glassCard,
+.stepCard,
+.faqCard {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.hoverGlow:hover {
+  box-shadow: 0 0 25px rgba(0, 198, 255, 0.3);
+  transform: translateY(-5px);
+}
+
+.testimonialWrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.testimonialTrack {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+}
+
+.testimonialCard {
+  min-width: 300px;
+  max-width: 320px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-5px);
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.testimonialText {
+  font-size: 0.95rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  background: #00c6ff;
+  color: #000;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userName {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* ===== StepCard Styles ===== */
+.stepNumber {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #00c6ff;
+}
+
+.stepIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== Titles & Text ===== */
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cardText,
+.testimonialText,
+.faqAnswer {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* ===== Testimonial Card ===== */
+.stars {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.star {
+  color: gold;
+  width: 1rem;
+  height: 1rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #00c6ff;
+  color: #000;
+  border-radius: 50%;
+  margin: 0.5rem auto;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userName {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* ===== FAQ ===== */
+.faqContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faqQuestion {
+  width: 100%;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #fff;
+  text-align: left;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.faqAnswer {
+  padding: 0 1rem 1rem;
+  text-align: left;
+}
+
+.iconRotated {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+/* ===== Footer ===== */
+.footer {
+  padding: 2rem;
+  background: #0f0f0f;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.footerLinks a {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footerLinks a:hover {
+  color: #00c6ff;
+}

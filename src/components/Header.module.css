@@ -1,0 +1,80 @@
+.header {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+  border-radius: 0 0 20px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.navDesktop {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navDesktop a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.3rem 0.6rem;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.navDesktop a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.logoutBtn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.logoutBtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #000;
+}
+
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  right: 1.5rem;
+  z-index: 1600;
+  cursor: pointer;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .navDesktop {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

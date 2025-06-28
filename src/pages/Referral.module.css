@@ -1,0 +1,170 @@
+/* ReferralPage.module.css */
+
+.referralContainer {
+  min-height: 100vh;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.shareCard {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.refText {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.linkBox {
+  display: flex;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  word-break: break-all;
+}
+
+.copyBtn {
+  background: linear-gradient(135deg, #00c6ff, #5b247a);
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.copied {
+  font-size: 0.85rem;
+  color: #66ffb2;
+  margin-top: 0.3rem;
+}
+
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.kpiCard {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+}
+
+.kpiCard h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.kpiCard p {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.milestoneBar {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.progressOuter {
+  width: 100%;
+  max-width: 600px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  margin: 0.5rem auto;
+  overflow: hidden;
+}
+
+.progressInner {
+  height: 100%;
+  background: linear-gradient(135deg, #00c6ff, #5b247a);
+  transition: width 0.4s ease;
+}
+
+.referralList {
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table th {
+  background: rgba(255, 255, 255, 0.1);
+  text-align: left;
+  font-weight: 600;
+}
+
+.table tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.faq {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+.faq details {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 1rem;
+  margin-bottom: 0.75rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.faq summary {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.faq p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #ccc;
+}

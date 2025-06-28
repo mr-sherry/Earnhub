@@ -1,0 +1,86 @@
+.quizContainer {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.articleCard,
+.quizCard,
+.resultCard {
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.articleText {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin: 1rem 0 2rem;
+}
+
+.startBtn,
+.retryBtn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #00c6ff, #5b247a);
+  color: white;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.startBtn:hover,
+.retryBtn:hover {
+  opacity: 0.85;
+}
+
+.progress {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.optionBtn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.optionBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.scoreText {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
